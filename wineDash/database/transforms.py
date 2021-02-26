@@ -9,7 +9,7 @@ from dash.dependencies import Input, Output
 import dash_table
 import pandas as pd
 
-conn = sqlite3.connect(r"C:\Users\MTGro\Desktop\coding\wineApp\db\wine_data.sqlite")
+conn = sqlite3.connect(r"C:\Users\clyde\OneDrive\Documents\Veritas Data Analytics\Dash\DashApp\wineDash\database\wine_data.sqlite")
 c = conn.cursor()
 
 df = pd.read_sql("select * from wine_data", conn)
